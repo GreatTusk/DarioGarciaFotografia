@@ -17,6 +17,31 @@ html {
   line-height: 1.4;
 }
 
+.header_formulario {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.formulario_contacto {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+.formulario_contacto input,
+.formulario_contacto textarea,
+.formulario_contacto button,
+.formulario_contacto select {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 5px;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

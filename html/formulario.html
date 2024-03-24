@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.png">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<header class="header_formulario">
+  <h1>Formulario de contacto</h1>
+  <h2>Muchas gracias por elegirnos</h2>
+  <p>Por favor, complete el siguiente formulario para contactarnos.</p>
+</header>
+
+<main>
+  <div class="container">
+
+    <form class="formulario_contacto" method="post">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" required minlength="3" maxlength="100"
+             placeholder="Ingrese su nombre">
+
+      <label for="apellido">Apellidos:</label>
+      <input type="text" name="apellido" id="apellido" required minlength="3" maxlength="100"
+             placeholder="Ingrese su apellido">
+
+      <label for="fono">Teléfono de contacto:</label>
+      <input type="tel" name="fono" id="fono" placeholder="912345678">
+
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="usuario@mail.com">
+
+      <label for="tipo_evento">Tipo de evento o sesión fotográfica</label>
+      <select name="tipo_evento" id="tipo_evento">
+        <option value="boda">Boda</option>
+        <option value="cumpleaños">Cumpleaños</option>
+        <option value="corporativo">Evento corporativo</option>
+        <option value="retrato">Retrato</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="numero_personas">Número estimado de personas que participarán del evento o sesión:</label>
+      <input type="number" name="c" id="numero_personas" min="1" max="1000" required>
+
+      <label for="tema_estilo">Tema o estilo deseado para la fotografía</label>
+      <select name="tema_estilo" id="tema_estilo">
+        <option value="tradicional">Tradicional</option>
+        <option value="documental">Documental</option>
+        <option value="artistico">Artístico</option>
+        <option value="conmemorativo">Conmemorativo</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="presupuesto">Presupuesto apróximado</label>
+      <input type="number" name="presupuesto" id="presupuesto" min="20000">
+
+      <label for="fecha">Fecha y hora aproximada del evento o sesión</label>
+      <input type="datetime-local" name="fecha" id="fecha">
+
+
+      <label for="mensaje">Requerimientos adicionales:</label>
+      <textarea name="mensaje" id="mensaje" required maxlength="255" placeholder="Me gustaría que..."></textarea>
+
+      <label for="descubrimiento">¿Cómo nos descubrieron?</label>
+      <select name="descubrimiento" id="descubrimiento">
+        <option value="google">Google</option>
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="recomendacion">Recomendación de un amigo</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </div>
+
+
+</main>
+
+</body>
+</html>
