@@ -10,36 +10,51 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+body {
+  font-family: 'Roboto', sans-serif; /* Use Google Fonts */
+  background-color: #f9f9f9; /* Use a softer background color */
+  color: #333; /* Use a softer text color */
 }
 
 .header_formulario {
-  background-color: #f2f2f2;
-  padding: 10px;
+  background-color: #e0e0e0; /* Use a softer background color */
+  padding: 20px; /* Increase padding */
   text-align: center;
-  margin: 0 0 20px;
+  margin-bottom: 30px; /* Increase margin */
 }
 
 .formulario_contacto {
   margin: 0 auto;
   width: 50%;
-  padding: 10px;
+  padding: 20px; /* Increase padding */
   border: 1px solid #ccc;
   border-radius: 5px;
   display: block;
+  background-color: #fff; /* Add a background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
 }
+
 .formulario_contacto input,
 .formulario_contacto textarea,
 .formulario_contacto button,
 .formulario_contacto select {
+  box-sizing: border-box;
   display: block;
   width: 80%;
-  margin: 10px auto;
-  padding: 5px;
+  margin: 15px auto; /* Increase margin */
+  padding: 10px; /* Increase padding */
+  border-radius: 5px; /* Add border radius */
+  border: 1px solid #ccc; /* Add a border */
+}
+
+.formulario_contacto button {
+  background-color: #007BFF; /* Add a background color */
+  color: #fff; /* Change text color */
+  cursor: pointer; /* Change cursor */
+}
+
+.formulario_contacto button:hover {
+  background-color: #0056b3; /* Add a hover effect */
 }
 
 /*
